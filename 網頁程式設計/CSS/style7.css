@@ -1,0 +1,47 @@
+.container{
+    display: flex;
+    /* 寬度不足自動換行 */
+    flex-wrap: wrap;
+    /* column:由上而下 
+    column-reverse:由下而上
+    預設row:由左而右
+    row-reverse:由右而左 */
+    flex-direction: row;
+    height: 300px;
+    border: 1px solid red;
+    /* center:置中
+    flex-end:最後
+    flex-start:開始
+    space-around:分攤(010010010)
+    space-between:分攤(100010001)
+    space-evenly:分攤(00100100100) */
+    justify-content: center;
+    /* 另一個水平線(少樣本) */
+    /* align-items: center; */
+    /* 另一個水平線集中(多樣本) */
+    align-content: center;
+}
+
+.container div{
+    border: 1px solid whitesmoke;
+    padding: 10px;
+    width: 100px;
+    height: 20px;
+}
+/* flex:分配區域(2 1 1表示4等分) */
+/* order:順序(依照數字大小排列) */
+
+/* .box-1{
+    flex: 2;
+    order: 2;
+}
+
+.box-2{
+    flex: 1;
+    order: 1;
+}
+
+.box-3{
+    flex: 1;
+    order: 3;
+} */

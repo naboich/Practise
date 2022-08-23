@@ -1,0 +1,31 @@
+@keyframes change-color{
+    /* from{background-color:red;}
+    to{background-color:black;} */
+    /* 按照時間比例分配 */
+    0%{background-color:orange; top: 10px; left: 10px;}
+    20%{background-color:yellow; top: 20px; left: 20px;}
+    40%{background-color:greenyellow; top: 30px; left: 30px;}
+    60%{background-color:dodgerblue; top: 40px; left: 40px;}
+    80%{background-color: slateblue; top: 50px; left: 50px;}
+    100%{background-color:purple; top: 60px; left: 60px;}
+}
+
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    /* 定位(以原先位置做更動) */
+    position: relative;
+}
+/* 滑動跑 */
+.box-animation:hover{
+    /* 上述定義的名稱 */
+    animation-name: change-color;
+    /* 持續時間 */
+    animation-duration: 1s;
+    /* 次數(infinite:無限次) */
+    animation-iteration-count: infinite;
+    /* 載入後延遲 */
+    animation-delay: 0s;
+}

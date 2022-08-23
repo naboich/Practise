@@ -1,0 +1,24 @@
+/* 複選 */
+#id-1, .class-1{
+    background-color: grey;
+}
+/* "*"整個網頁 */
+*{
+    color: red;
+}
+/* ul內的li */
+ul li{
+    background-color: aquamarine;
+}
+/* ul內的a */
+ul a{
+    color: yellowgreen;
+}
+/* [屬性]屬性選取 */
+[type]{
+    background-color: gold;
+}
+/* hover 滑過標籤 */
+h1:hover{
+background-color: pink;
+}
